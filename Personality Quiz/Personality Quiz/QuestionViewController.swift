@@ -63,6 +63,7 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        navigationItem.hidesBackButton = true
         
     }
     

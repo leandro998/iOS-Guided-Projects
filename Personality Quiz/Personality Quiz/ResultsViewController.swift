@@ -12,6 +12,10 @@ class ResultsViewController: UIViewController {
     
     var responses: [Answer]!
     
+    @IBOutlet weak var resultAnswerLabel: UILabel!
+    
+    @IBOutlet weak var resultDefinitionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         calculatePersonalityResult()
@@ -19,12 +23,11 @@ class ResultsViewController: UIViewController {
     
     func calculatePersonalityResult() {
 
-        //  even after naming ResultsSegue on the Attributes Inspector (Main.storyboard) this VC is not inhereting the QuestionData struct, making it impossible to continue, why does this happen?
         
-        var frequencyOfAnswers: [AnimalType: Int] = [:]
+        var frequencyOfAnswers: [Answer.AnimalType: Int] = [:]
         let responseTypes = responses.map { $0.type }
-    
-    
+
+
     for response in responseTypes {
         let newCount: Int
 
@@ -36,6 +39,17 @@ class ResultsViewController: UIViewController {
 
         frequencyOfAnswers[response] = newCount
     }
+        
+        let frequentAnsersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) -> Bool in
+            return pair1.value > pair2.value
+//        This code could be simpler using this: frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
+            
+        })
+        
+        let mostCommonAnswer = frequentAnsersSorted.first!.key
+        
+        resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
+        resultDefinitionLabel.text = mostCommonAnswer.definition
     
     }
 

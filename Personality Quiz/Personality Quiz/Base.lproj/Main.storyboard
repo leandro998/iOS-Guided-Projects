@@ -18,7 +18,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EAV-yo-Zoh">
                                 <rect key="frame" x="45.5" y="405.5" width="323" height="85"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-x8-8Zu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are You?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-x8-8Zu">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
@@ -196,13 +196,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OYT-Ps-36g">
-                                <rect key="frame" x="20" y="358" width="414" height="126.5"/>
+                                <rect key="frame" x="20" y="358" width="374" height="126.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="C9P-kb-J1x">
-                                        <rect key="frame" x="-2" y="0.0" width="418" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="CYU-Hz-Pl5">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="374" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-IO-ZQA">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -211,7 +211,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvI-Iw-d4s">
-                                                <rect key="frame" x="372" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="332" y="0.0" width="42" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -219,7 +219,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsS-Oy-57h">
-                                        <rect key="frame" x="0.0" y="90.5" width="414" height="36"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
@@ -228,7 +228,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qaq-ff-nvZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qaq-ff-nvZ">
                                 <rect key="frame" x="0.0" y="76" width="414" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
@@ -243,7 +243,7 @@
                             <constraint firstItem="Kl6-0R-f3Z" firstAttribute="trailing" secondItem="Qaq-ff-nvZ" secondAttribute="trailing" id="1Rf-rP-SxH"/>
                             <constraint firstItem="pUM-7L-pIu" firstAttribute="leading" secondItem="sEw-xh-wj4" secondAttribute="leadingMargin" constant="20" id="3Gq-EQ-ioC"/>
                             <constraint firstItem="Kl6-0R-f3Z" firstAttribute="bottom" secondItem="pUM-7L-pIu" secondAttribute="bottom" constant="20" id="EEe-0y-ke2"/>
-                            <constraint firstItem="OYT-Ps-36g" firstAttribute="trailing" secondItem="Kl6-0R-f3Z" secondAttribute="trailing" constant="20" id="EvU-Q2-4Ax"/>
+                            <constraint firstItem="OYT-Ps-36g" firstAttribute="trailing" secondItem="Kl6-0R-f3Z" secondAttribute="trailing" constant="-20" id="EvU-Q2-4Ax"/>
                             <constraint firstItem="OYT-Ps-36g" firstAttribute="centerY" secondItem="sEw-xh-wj4" secondAttribute="centerY" id="LY3-2N-fLK"/>
                             <constraint firstItem="Not-xo-MVT" firstAttribute="centerY" secondItem="sEw-xh-wj4" secondAttribute="centerY" id="LsQ-uY-h3G"/>
                             <constraint firstItem="Qaq-ff-nvZ" firstAttribute="leading" secondItem="Kl6-0R-f3Z" secondAttribute="leading" id="LuJ-Vf-Jdr"/>
@@ -279,17 +279,17 @@
                         <outlet property="singleButton3" destination="Bzk-TB-Iao" id="9ux-0W-94a"/>
                         <outlet property="singleButton4" destination="Kdz-wz-gWj" id="UGG-px-xKb"/>
                         <outlet property="singleStackView" destination="T4f-Hn-4lo" id="xqI-Zn-v5q"/>
-                        <segue destination="agt-ol-rgr" kind="show" id="M4L-VY-qW5"/>
+                        <segue destination="agt-ol-rgr" kind="show" identifier="ResultsSegue" id="M4L-VY-qW5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9A-sk-nMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1810.144927536232" y="115.84821428571428"/>
         </scene>
-        <!--ResultsSegue-->
+        <!--Results-->
         <scene sceneID="UhV-wi-l2h">
             <objects>
-                <viewController storyboardIdentifier="ResultsSegue" title="ResultsSegue" id="agt-ol-rgr" userLabel="ResultsSegue" customClass="ResultsViewController" customModule="Personality_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="agt-ol-rgr" userLabel="Results" customClass="ResultsViewController" customModule="Personality_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mrR-mq-Q0e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,7 +303,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65k-Qk-RyQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65k-Qk-RyQ">
                                         <rect key="frame" x="163" y="68" width="48" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -321,12 +321,21 @@
                         <viewLayoutGuide key="safeArea" id="21s-qa-sBO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="TlX-ow-r0Z">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="MEt-Tc-Og6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="MEt-Tc-Og6">
+                            <connections>
+                                <segue destination="wED-gW-Ghp" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="NCq-Pr-FrX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="CzF-h6-XW5" id="lto-LS-Tqb"/>
+                        <outlet property="resultDefinitionLabel" destination="65k-Qk-RyQ" id="ENx-cb-3xF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcE-9t-2hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wED-gW-Ghp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2571.0144927536235" y="115.84821428571428"/>
+            <point key="canvasLocation" x="2712" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rVe-OP-Oe3">
